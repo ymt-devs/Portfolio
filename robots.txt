@@ -1,0 +1,43 @@
+# robots.txt for https://ymt.com.np
+# Optimized for InfinityFree to conserve daily hit limits against aggressive scrapers
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Rate-limit generic bots to preserve InfinityFree 50k hits quota
+User-agent: *
+Crawl-delay: 10
+Allow: /
+
+# Block known aggressive scrapers that exhaust daily hit quotas
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+Sitemap: https://ymt.com.np/sitemap.xml
